@@ -1,3 +1,5 @@
+# SocialApp
+
 Welcome to the Pinterest Clone Social App project! This application was made for educational pourposes.
 
 ## Technologies Used
