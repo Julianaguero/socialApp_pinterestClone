@@ -129,6 +129,7 @@ function PinDetail({ user }) {
               </div>
             ))}
           </div>
+          {user ? (
           <div className="flex flex-wrap mt-6 gap-3 items-center">
             <Link
               to={`user-profile/${pinDetail.postedBy?._id}`}
@@ -153,7 +154,9 @@ function PinDetail({ user }) {
             >
               {addingComment ? 'Posting the comment...' : 'Post'}
             </button>
-          </div>
+          </div>) : (
+            <div className="mt-16 font-bold"> 😪 Sign in to leave a comment!  </div>
+          )}
         </div>
       </div>
       {pins?.length > 0 ? (

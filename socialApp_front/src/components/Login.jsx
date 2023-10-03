@@ -35,9 +35,9 @@ function Login() {
                     <p className='text-center text-white my-4'>- or -</p>
                     <button
                         type='button'
-                        onClick={() =>
+                        onClick={() => {
                             navigate('/', { replace: false })
-                        }
+                        }}
                         className='bg-gray-50 rounded-sm py-2 px-6 hover:bg-slate-100 text-md'
                     >Guest access</button>
 

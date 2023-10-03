@@ -9,7 +9,7 @@ import MasonryLayout from "./MasonryLayout"
 import Spinner from "./Spinner"
 import { removeUser } from "../utils/fetchUser"
 
-const randomImage = 'http://source.unsplash.com/160 0x900/?nature,photography,technology'
+const randomImage = 'http://source.unsplash.com/1600x900/?nature,photography,technology'
 
 const activeBtnStyles = 'bg-red-500 text-white font-bold p-2 rounded-full w-20 outline-none'
 const notActiveBtnStyles = 'bg-primary mr-4 text-blank font-bold p-2 rounded-full w-20 outline-none'

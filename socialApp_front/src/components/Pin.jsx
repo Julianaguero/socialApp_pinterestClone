@@ -73,7 +73,7 @@ function Pin({ pin: { postedBy, image, _id, destination, save } }) {
                                     <MdDownloadForOffline />
                                 </a>
                             </div>
-                            {alreadySaved ? (
+                           {user && (alreadySaved ? (
                                 <button
                                     type="button"
                                     className="bg-red-500 opacity-70 hover:opacity-100 text-white font-bold px-5 py-1 rounded-3xl hover:shadow-md outline-none"
@@ -91,7 +91,7 @@ function Pin({ pin: { postedBy, image, _id, destination, save } }) {
                                 >
                                     Save
                                 </button>
-                            )}
+                            ))}
                         </div>
                         <div className="flex justify-between items-center gap-2 w-full">
                             {destination && (

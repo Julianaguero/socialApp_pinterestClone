@@ -13,21 +13,23 @@ import { userQuery } from "../utils/data"
 import { fetchUser } from "../utils/fetchUser";
 
 
-
 function Home() {
-
+  
   const [toggleSidebar, setToggleSidebar] = useState(false)
   const [user, setUser] = useState(null)
   const scrollRef = useRef(null)
   const userInfo = fetchUser();
+ 
 
   useEffect(() => {
-    const query = userQuery(userInfo?.sub)
+    
+      const query = userQuery(userInfo?.sub)
 
-    client.fetch(query)
-      .then((data) => {
-        setUser(data[0]);
-      })
+      client.fetch(query)
+        .then((data) => {
+          setUser(data[0]);
+        })
+    
   }, []);
 
   useEffect(() => {

@@ -1,13 +1,13 @@
 import { Link, useNavigate } from "react-router-dom"
 import { IoMdAdd, IoMdSearch } from "react-icons/io"
-import { GoogleLogin } from "@react-oauth/google";
 import { createOrGetUser } from "../utils/createOrGetUser";
 import { useEffect, useState } from "react";
+import { FcGoogle } from 'react-icons/fc'
 
 
 function Navbar({ searchTerm, setSearchTerm, user }) {
 
-  
+
   const navigate = useNavigate();
   const [loggedUser, setLoggedUser] = useState(null)
 
@@ -17,12 +17,12 @@ function Navbar({ searchTerm, setSearchTerm, user }) {
       setLoggedUser(true);
 
     }
-  }, [user]); 
+  }, [user]);
 
   const handleLogin = (credentialResponse) => {
-     createOrGetUser(credentialResponse)
-    .then(()=>navigate('/', { replace: false }))
-    .then(()=> {setLoggedUser(true)})
+    createOrGetUser(credentialResponse)
+      .then(() => navigate('/', { replace: false }))
+      .then(() => { setLoggedUser(true) })
     window.location.reload()
   }
 
@@ -57,11 +57,15 @@ function Navbar({ searchTerm, setSearchTerm, user }) {
 
         </div>
       ) : (
-        <GoogleLogin
-          onSuccess={(credentialResponse) => handleLogin(credentialResponse)}
-          onError={() => { console.log('Login Failed') }}
-          // useOneTap 
-        />
+        <button
+          type='button'
+          onClick={() => {
+            navigate('/login', { replace: false })
+          }}
+          className='bg-slate-300 rounded-md text-black font-semibold py-2 w-52 hover:bg-red-400 transition-all duration-100 ease-in hover:text-white flex items-center justify-center gap-2'
+        >
+        Sign in with <FcGoogle />
+          </button>
       )}
 
     </div>
