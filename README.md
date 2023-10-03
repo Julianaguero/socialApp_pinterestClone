@@ -1,8 +1,11 @@
 # SocialApp
 
+
 Welcome to the Pinterest Clone Social App project! This application was made for educational pourposes.
 
+
 ## Technologies Used
+
 
 - **Frontend**:
   - React: A powerful JavaScript library for building user interfaces.
@@ -14,6 +17,7 @@ Welcome to the Pinterest Clone Social App project! This application was made for
 - **API**:
   - The backend API is powered by Sanity, which serves as a backend-as-a-service (BaaS) and provides data storage, management, and retrieval.
 
+
 ## Features
 
 - **Pin Boards**: Similar to Pinterest boards, users can create and manage pin boards where they can save and organize their favorite pins.
@@ -24,4 +28,4 @@ Welcome to the Pinterest Clone Social App project! This application was made for
 
 ----------------------------------------------
 
-[Project Link]([https://jaguero-socialapp.netlify.app])
+##[Project Link]([https://jaguero-socialapp.netlify.app)
