@@ -28,4 +28,6 @@ Welcome to the Pinterest Clone Social App project! This application was made for
 
 ----------------------------------------------
 
-##[Project Link]([https://jaguero-socialapp.netlify.app)
+**[Link to the project!](https://jaguero-socialapp.netlify.app)**
+
+
