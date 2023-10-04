@@ -7,7 +7,7 @@ import Sidebar from '../components/Sidebar';
 
 
 import Pins from "./Pins";
-import logo from "../assets/logo.png";
+import logo from "../assets/socialApp-LogoFull.png";
 import { client } from "../client";
 import { userQuery } from "../utils/data"
 import { fetchUser } from "../utils/fetchUser";
